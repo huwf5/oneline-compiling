@@ -156,6 +156,7 @@ unique_ptr<ExecutionEngine> make_execution_engine( const EngineInfo & engine )
   else {
     throw runtime_error( "unknown execution engine: " + engine_name );
   }
+  return nullptr;
 }
 
 int main( int argc, char * argv[] )

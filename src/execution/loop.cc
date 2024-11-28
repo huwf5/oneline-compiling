@@ -112,7 +112,7 @@ ExecutionLoop::add_connection( TCPSocket && socket,
        data_callback  { move( data_callback ) },
        close_callback { move( real_close_callback ) }] ()
       {
-        string data { move( connection->socket_.read() ) };
+        string data { connection->socket_.read() };
 
         if ( data.empty() or not data_callback( connection, move( data ) ) ) {
           close_callback();
@@ -175,7 +175,7 @@ ExecutionLoop::add_connection( NBSecureSocket && socket,
        data_callback=move( data_callback ),
        close_callback=move( real_close_callback )] ()
       {
-        string data { move( connection->socket_.ezread() ) };
+        string data { connection->socket_.ezread() };
 
         if ( data.empty() or not data_callback( connection, move( data ) ) ) {
           close_callback();

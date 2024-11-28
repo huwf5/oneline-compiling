@@ -1,6 +1,6 @@
 #!/bin/bash -e
 # compile gg
-./fetch-submodules.sh
+# ./fetch-submodules.sh
 ./autogen.sh
 ./configure
 make -j$(nproc)

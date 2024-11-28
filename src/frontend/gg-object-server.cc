@@ -69,7 +69,7 @@ int main( int argc, char * argv[] )
             request_parser->parse( data );
 
             while ( not request_parser->empty() ) {
-              HTTPRequest request { move( request_parser->front() ) };
+              HTTPRequest request { request_parser->front() };
               request_parser->pop();
 
               const string & first_line = request.first_line();

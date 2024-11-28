@@ -285,7 +285,7 @@ namespace gg {
 
     string compute( const string & input, const ObjectType type )
     {
-      string ret { move( digest::sha256( input ) ) };
+      string ret { digest::sha256( input ) };
       ostringstream output_sstr;
 
       replace( ret.begin(), ret.end(), '-', '.' );

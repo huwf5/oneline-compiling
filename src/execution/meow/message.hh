@@ -5,6 +5,7 @@
 
 #include <string>
 #include <queue>
+#include <cstdint>
 
 #include "util/chunk.hh"
 

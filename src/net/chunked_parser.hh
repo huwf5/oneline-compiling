@@ -5,6 +5,7 @@
 
 #include "body_parser.hh"
 #include "util/exception.hh"
+#include <cstdint>
 
 class ChunkedBodyParser : public BodyParser
 {

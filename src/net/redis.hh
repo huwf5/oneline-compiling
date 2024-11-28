@@ -6,6 +6,7 @@
 #include <vector>
 #include <string>
 #include <functional>
+#include <cstdint>
 
 #include "net/requests.hh"
 

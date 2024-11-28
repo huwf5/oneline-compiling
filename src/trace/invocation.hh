@@ -5,6 +5,7 @@
 
 #include <string>
 #include <vector>
+#include <cstdint>
 
 #include "syscall.hh"
 #include "util/optional.hh"

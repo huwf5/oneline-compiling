@@ -85,7 +85,7 @@ int main( int argc, char * argv[] )
             request_parser->parse( move( data ) );
 
             while ( not request_parser->empty() ) {
-              HTTPRequest http_request { move( request_parser->front() ) };
+              HTTPRequest http_request { request_parser->front() };
               request_parser->pop();
 
               const static string reset_line { "GET /reset HTTP/1.1" };

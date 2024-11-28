@@ -6,6 +6,7 @@
 #include <sstream>
 #include <iostream>
 #include <regex>
+#include <cstring>
 
 #include "util/path.hh"
 
